@@ -4,38 +4,44 @@ body {
 
 h1 {
   color:rgba(22, 22, 22, 0.4);
-  font-size: 96px;
+  font-size: 70px;
   text-align: right;
-  margin-right: 80px;
+  margin-right: 60px;
 }
 
 .left {
-  width: 800px;
+  width: 600px;
 }
 .right {
   width: 100%;
 }
 
 .account-card {
-  background: white;
+  color: white;
+  background: black;
   border-radius: 16px;
   margin: 16px;
   padding: 16px;
+  opacity: 0.8;
 }
 
 .sender-card {
-  background: white;
+  color: white;
+  background: black;
   border-radius: 16px;
   margin: 16px;
   padding: 16px;
+  opacity: 0.8;
 }
 
 .tx-card {
-  background: white;
+  color: white;
+  background: black;
   border-radius: 16px;
   padding: 32px;
-  width: 1200px;
+  width: 800px;
   margin: 16px;
+  opacity: 0.8;
 }
 
 .textfiled-wrapper {
@@ -45,15 +51,16 @@ h1 {
 }
 
 .textfiled {
-  width: 400px;
+  width: 300px;
 }
 
 #wallet-addr {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .container {
-  font-size: 24px;
+  font-size: 20px;
   margin: 16px;
 }
 
