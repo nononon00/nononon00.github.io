@@ -1,10 +1,10 @@
 body {
-  background: rgb(242, 242, 242);
+  background: rgb(100, 100, 100);
 }
 
 h1 {
-  color:rgba(22, 22, 22, 0.4);
-  font-size: 70px;
+  color:rgba(240, 240, 240, 0.6);
+  font-size: 60px;
   text-align: right;
   margin-right: 60px;
 }
@@ -67,5 +67,5 @@ h1 {
 .wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 80px;
+  margin: 50px;
 }
