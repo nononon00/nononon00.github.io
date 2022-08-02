@@ -63,6 +63,13 @@ h1 {
   width: 300px;
 }
 
+.botton {
+  font-weight: bold;
+  font-size: 10px;
+  color:rgb(109, 119, 246);
+}
+  
+
 #wallet-addr {
   font-size: 20px;
   font-weight: bold;
