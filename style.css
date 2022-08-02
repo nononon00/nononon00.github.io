@@ -45,6 +45,9 @@ h1 {
   margin: 16px;
   opacity: 0.8;
 }
+.tx-card :link{
+    color:rgb(240, 240, 240);
+}
 
 .textfiled-wrapper {
   display: flex;
