@@ -65,9 +65,10 @@ h1 {
 }
 
 .botton {
-  font-weight: bold;
-  font-size: 10px;
-  color:rgb(109, 119, 246);
+  font-size: 16px;
+  color:black;
+  margin: 16px 16px;
+  padding: 3px 3px;
 }
   
 
