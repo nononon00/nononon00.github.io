@@ -56,7 +56,9 @@ transactionHttp
       const dom_tx = document.createElement('div')
       const dom_txType = document.createElement('div')
       const dom_hash = document.createElement('div')
+      
 //▼Transactionに表示されるとこ
+      dom_txType.innerText = `Transaction Type : ${getTransactionType(tx.type)}`
       dom_txType.innerText = `Transaction Type : ${getTransactionType(tx.type)}`
       dom_hash.innerHTML = "Transaction Hash : "+`${tx.transactionInfo.hash}`.link("https://symbol.fyi/transactions/"+ tx.transactionInfo.hash)
 
@@ -91,7 +93,7 @@ function handleSSS() {
     ],
     symbol.PlainMessage.create(message),
     NET_TYPE,
-    symbol.UInt64.fromUint(500000)
+    symbol.UInt64.fromUint(50000)
   )
 
   window.SSS.setTransaction(tx)
