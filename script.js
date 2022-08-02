@@ -57,7 +57,7 @@ transactionHttp
       const dom_txType = document.createElement('div')
       const dom_hash = document.createElement('div')
 
-      dom_txType.innerText = `Transaction Type : ${getTransactionType(tx.type)}`
+      dom_txType.innerText = `Transaction Type : ${getTransactionType(tx.type).link("https://symbol.fyi/transactions/"+getTransactionType(tx.type)}`
       dom_hash.innerText = `Transaction Hash : ${tx.transactionInfo.hash}`
 
       dom_tx.appendChild(dom_txType)
@@ -86,7 +86,7 @@ function handleSSS() {
     [
       new symbol.Mosaic(
         new symbol.MosaicId(XYM_ID),
-        symbol.UInt64.fromUint(Number(amount))
+        symbol.UInt64.fromUint(Number(amount)*1000000)
       )
     ],
     symbol.PlainMessage.create(message),
