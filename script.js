@@ -91,7 +91,7 @@ function handleSSS() {
     ],
     symbol.PlainMessage.create(message),
     NET_TYPE,
-    symbol.UInt64.fromUint(100)
+    symbol.UInt64.fromUint(500000)
   )
 
   window.SSS.setTransaction(tx)
