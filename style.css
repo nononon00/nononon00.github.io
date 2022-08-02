@@ -45,8 +45,13 @@ h1 {
   margin: 16px;
   opacity: 0.8;
 }
-.tx-card :link{
+.tx-card :visited{
     color:rgb(240, 240, 240);
+}
+
+.tx-card :hover {
+  color:rgb(109, 119, 246);
+  text-decoration:underline;
 }
 
 .textfiled-wrapper {
