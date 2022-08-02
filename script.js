@@ -77,7 +77,7 @@ function getTransactionType (type) { // https://symbol.github.io/symbol-sdk-type
 function handleSSS() {
   console.log('handle sss')
   const addr = document.getElementById('form-addr').value
-  const amount = document.getElementById('form-amount').value
+  const amount = document.getElementById('form-amount'*1000000).value
   const message = document.getElementById('form-message').value
   
   const tx = symbol.TransferTransaction.create(
@@ -91,7 +91,7 @@ function handleSSS() {
     ],
     symbol.PlainMessage.create(message),
     NET_TYPE,
-    symbol.UInt64.fromUint(2000000)
+    symbol.UInt64.fromUint(100)
   )
 
   window.SSS.setTransaction(tx)
