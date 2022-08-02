@@ -48,7 +48,7 @@ h1 {
     color:rgb(240, 240, 240);
 }
 
-.tx-card :hover {
+.tx-card :link {
   color:rgb(109, 119, 246);
   text-decoration:underline;
 }
