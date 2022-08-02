@@ -13,7 +13,16 @@
           <h2>Account Info</h2>
           <div class="container">
             <div>Address</div>
-            <div id="wallet-addr"></div>
+            <div id="copy">
+              <div id="wallet-addr">
+              </div>
+            </div>
+            
+            <!--test-->
+            <button id="button1" onclick="CopyToClipboard('copy')">Click to copy</button>
+            <textarea placeholder="Press ctrl+v to Paste the copied text" rows="5" cols="20"></textarea>
+            <!--test-->
+            
           </div>
           <div class="container">
             <div id="wallet-xym"></div>
