@@ -54,6 +54,7 @@ h1 {
 }
 
 .textfiled-wrapper {
+  font-size: 18px;
   display: flex;
   justify-content: space-between;
   margin: 8px;
