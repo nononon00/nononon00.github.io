@@ -58,7 +58,7 @@ transactionHttp
       const dom_hash = document.createElement('div')
 //▼Transactionに表示されるとこ
       dom_txType.innerText = `Transaction Type : ${getTransactionType(tx.type)}`
-      dom_hash.innerText = `Transaction Hash : ${tx.transactionInfo.hash}`.link("https://symbol.fyi/transactions/"+ tx.transactionInfo.hash)
+      dom_hash.innerHTML = `Transaction Hash : ${tx.transactionInfo.hash}`.link("https://symbol.fyi/transactions/"+ tx.transactionInfo.hash)
 
       dom_tx.appendChild(dom_txType)
       dom_tx.appendChild(dom_hash)
