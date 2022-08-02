@@ -22,7 +22,7 @@ h1 {
   border-radius: 16px;
   margin: 16px;
   padding: 16px;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .sender-card {
@@ -31,19 +31,18 @@ h1 {
   border-radius: 16px;
   margin: 16px;
   padding: 16px;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .tx-card {
   color: white;
-  text-decoration:underline;
   background: black;
-  font-size: 15px;
+  font-size: 18px;
   border-radius: 16px;
   padding: 16px;
   width: 1000px;
   margin: 16px;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .tx-card :visited{
     color:rgb(240, 240, 240);
