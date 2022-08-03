@@ -85,7 +85,7 @@ body {
   float: left;
 }
 
-.sssbutton {
+#sssbutton {
   background-color:rgba(43, 45, 66,0.8);
   font-size: 12px;
   width: 40px;
