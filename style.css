@@ -28,7 +28,6 @@ body {
 }
 .left {
     width: 100%;
-    padding-left:16px
 }
 .right {
     width: 100%;
@@ -74,6 +73,10 @@ body {
   color:rgb(38, 197, 243);
 }  
 
+.text {
+  width: 100%;
+  margin: 16px;
+}
   
 .textfiled-wrapper {
   font-size: 18px;
@@ -94,12 +97,12 @@ body {
   font-weight: bold;
 }
 
-#sssbutton {
+.sssbutton {
   color:rgb(109, 119, 246);
 }
 
-#sssbutton :hover {
-  background:rgba(109, 119, 246,0.8);
+.sssbutton :hover {
+  background-color:rgba(109, 119, 246,0.8);
   color:rgba(43, 45, 66,0.8);
   transition: all 1s;
 }
