@@ -31,7 +31,6 @@ body {
 }
 .right {
     width: 100%;
-    height:100%
 }
 
 .account-card {
@@ -48,7 +47,7 @@ body {
   background: black;
   border-radius: 16px;
   margin: 16px;
-  padding: 16px;
+  padding: 16px 16px 20px 16px;
   opacity: 0.8;
 }
 
@@ -83,9 +82,10 @@ body {
 }
 
 .textfiled {
-  width: 100%;
+  width: 92%;
+  height: 20px;
   margin-left: 8px;
-  float: left;
+  margin-bottom: 10px;
 }
 
 #wallet-addr {
@@ -93,10 +93,19 @@ body {
   font-weight: bold;
 }
 
+#sssbutton {
+  color:rgb(109, 119, 246);
+}
+
+#sssbutton :hover{
+  background-color:rgba(109, 119, 246,0.8);
+  color:rgba(43, 45, 66,0.8);
+  transition: all 1s;
+
 .container {
   font-size: 20px;
   margin: 16px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .wrapper {
