@@ -25,7 +25,7 @@ setTimeout(() => {
 const address = symbol.Address.createFromRawAddress(window.SSS.activeAddress)
 
 const dom_addr = document.getElementById('wallet-addr')
-dom_addr.innerText = address()
+dom_addr.innerText = address.plain()
 
 accountHttp.getAccountInfo(address)
   .toPromise()
