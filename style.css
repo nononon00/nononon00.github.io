@@ -65,9 +65,9 @@ body {
   margin: 16px;
   opacity: 0.8;
 }
-/*.tx-card :visited{
-    color:rgb(109, 119, 246);
-}*/
+.tx-card :visited{
+  color:rgb(38, 197, 243);
+}
 
 .tx-card :link {
   color:rgb(109, 119, 246);
