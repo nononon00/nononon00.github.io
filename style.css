@@ -9,7 +9,7 @@ header {
 
 
 h1 {
-  color:rgba(240, 240, 240, 0.6);
+  color:rgba(240, 240, 240, 0.8);
   font-size: 60px;
   text-align: right;
   margin-right: 60px;
@@ -37,7 +37,7 @@ body {
   border-radius: 16px;
   margin: 16px;
   padding: 16px;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .sender-card {
@@ -46,7 +46,7 @@ body {
   border-radius: 16px;
   margin: 16px;
   padding: 16px;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .tx-card {
@@ -57,7 +57,7 @@ body {
   padding: 16px;
   width: 1000px;
   margin: 16px;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .tx-card :visited{
     color:rgb(109, 119, 246);
