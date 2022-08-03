@@ -108,5 +108,6 @@ body {
 .wrapper {
   display: flex;
   justify-content: space-between;
+  float: left;
   margin: 20px;
 }
