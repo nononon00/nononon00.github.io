@@ -28,9 +28,11 @@ body {
 }
 .left {
     width: 100%;
+    padding-left:16px
 }
 .right {
     width: 100%;
+    padding-right:16px
 }
 
 .account-card {
@@ -54,7 +56,6 @@ body {
 .tx-card {
   color: white;
   background: black;
-  width: 100%;
   font-size: 16px;
   border-radius: 16px;
   padding: 16px;
@@ -97,11 +98,12 @@ body {
   color:rgb(109, 119, 246);
 }
 
-#sssbutton :hover{
-  background-color:rgba(109, 119, 246,0.8);
+#sssbutton :hover {
+  background:rgba(109, 119, 246,0.8);
   color:rgba(43, 45, 66,0.8);
   transition: all 1s;
-
+}
+  
 .container {
   font-size: 20px;
   margin: 16px;
