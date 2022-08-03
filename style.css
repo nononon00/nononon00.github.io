@@ -20,6 +20,7 @@ body {
   background-image: url(https://data.comsa.io/user/efae247f-7318-4d2d-ae68-4f7e772819b6/asset/1147c953-3044-47f7-a38f-c966219cb7c7.jpeg);
   background-size: cover;
   position: fixed;
+  height: 2000px;
 }
 
 .container-main {
