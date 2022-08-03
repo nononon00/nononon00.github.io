@@ -79,7 +79,7 @@ body {
   
 .textfiled-wrapper {
   font-size: 18px;
-  display: flex;
+  width: 100%;
   justify-content: space-between;
   margin: 8px;
 }
