@@ -1,5 +1,5 @@
 header {
-  height: 140px;
+  height: 170px;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -27,9 +27,11 @@ body {
   
 .left {
   width: 50%;
+  margin-top:170px;
 }
 .right {
   width: 50%;
+  margin-top:170px;
 }
 
 .account-card {
