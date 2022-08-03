@@ -68,6 +68,9 @@ body {
   text-decoration:underline;
 }
 
+.tx-card :link:hover {
+  color:rgb(38, 197, 243);
+
 .textfiled-wrapper {
   font-size: 18px;
   display: flex;
