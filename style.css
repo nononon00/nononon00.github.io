@@ -81,6 +81,7 @@ body {
 .textfiled {
   width: 300px;
   margin-left: 8px;
+  float: left;
 }
 
 .sssbutton {
@@ -107,5 +108,7 @@ body {
 .wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin-top: 20px;
+  margin-left: 8px;
+  border-radius: 4px;
 }
