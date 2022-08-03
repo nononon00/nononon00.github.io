@@ -1,6 +1,5 @@
 header {
   height: 170px;
-  width: 100%;
   position: fixed;
   top: 0px;
   z-index: 90;
@@ -22,15 +21,15 @@ body {
   background-size: cover;
 }
 
-/*.container {
-  float:left;*/
-  
-.left {
+.container {
+  float:left;
   width: 50%;
   margin-top:170px;
 }
+.left {
+  margin-top:170px;
+}
 .right {
-  width: 50%;
   margin-top:170px;
 }
 
@@ -113,5 +112,4 @@ body {
   margin-top: 20px;
   margin-left: 8px;
   border-radius: 4px;
-  float: left;
 }
