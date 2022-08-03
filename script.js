@@ -61,7 +61,7 @@ transactionHttp
       dom_txType.innerText = `Transaction Type : ${getTransactionType(tx.type)}`
       dom_txType.innerText = `Transaction Type : ${getTransactionType(tx.type)}`
       //dom_hash.innerHTML = "Transaction Hash : "+`${tx.transactionInfo.hash}`.link("https://symbol.fyi/transactions/"+ tx.transactionInfo.hash)
-      dom_hash.innerHTML = "Transaction Hash : "+`<a href="https://symbol.fyi/transactions/${tx.transactionInfo.hash}" target="_blank">${tx.transactionInfo.hash}</a>`
+      dom_hash.innerHTML = "Transaction Hash : "+`<a href="https://symbol.fyi/transactions/${tx.transactionInfo.hash}" target="_blank"><small>${tx.transactionInfo.hash}</small></a>`
       
       
       dom_tx.appendChild(dom_txType)
