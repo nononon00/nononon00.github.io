@@ -4,7 +4,6 @@ header {
   position: fixed;
   top: 0px;
   z-index: 90;
-  position: absolute;
   
 }
 
@@ -15,8 +14,6 @@ h1 {
   text-align: right;
   margin-right: 40px;
   z-index: 100;
-  top: 0px;
-  right: 40px;
 }
 
 
