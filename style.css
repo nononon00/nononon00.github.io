@@ -1,5 +1,5 @@
 header {
-  height: 170px;
+  height: 150px;
   position: fixed;
   top: 0px;
   z-index: 90;
@@ -24,13 +24,15 @@ body {
 .container-main {
   float:left;
   width: 50%;
-  margin-top:170px;
+  margin-top:160px;
 }
 .left {
-    width: 100%;
+    width: 35%;
+    margin-top:160px;
 }
 .right {
-    width: 100%;
+    width: 65%;
+    margin-top:160px;
     padding-right:16px
 }
 
@@ -117,7 +119,6 @@ input[type="button"] :hover {
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
   margin-top: 20px;
   margin-left: 8px;
   border-radius: 4px;
