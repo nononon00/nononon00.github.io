@@ -60,8 +60,8 @@ transactionHttp
 //▼Transactionに表示されるとこ
       dom_txType.innerText = `Transaction Type : ${getTransactionType(tx.type)}`
       dom_txType.innerText = `Transaction Type : ${getTransactionType(tx.type)}`
-      //dom_hash.innerHTML = "Transaction Hash : "+`${tx.transactionInfo.hash}`.link("https://symbol.fyi/transactions/"+ tx.transactionInfo.hash)
-      dom_hash.innerHTML = "Transaction Hash : "+`<a href="https://symbol.fyi/transactions/${tx.transactionInfo.hash}" target="_blank"><small>${tx.transactionInfo.hash}</small></a>`
+      //dom_hash.innerHTML = "Transaction Hash : "+`${tx.transactionInfo.hash}`.link("https://symbol.fyi/transactions/"+ tx.transactionInfo.hash)　同じタブ
+      dom_hash.innerHTML = "Transaction Hash : "+`<a href="https://symbol.fyi/transactions/${tx.transactionInfo.hash}" target="_blank" rel="noopener noreferrer"><small>${tx.transactionInfo.hash}</small></a>`
       
       
       dom_tx.appendChild(dom_txType)
@@ -74,9 +74,87 @@ transactionHttp
 }, 500)
 
 function getTransactionType (type) { // https://symbol.github.io/symbol-sdk-typescript-javascript/1.0.3/enums/TransactionType.html
-  if (type === 16724) return 'TRANSFER'
-  return 'OTHER'
+  //もしくはこっち？　https://qiita.com/nem_takanobu/items/cf7c5e0fe5faa9221c29
+  //ほんとはオブジェクトとか配列使うといいんだろうな…
+  switch (type) {
+  case  16724:
+    return 'TRANSFER'
+    break;//
+  case  16720:
+    return 'ACCOUNT_ADDRESS_RESTRICTION'
+    break;//アカウント制限アドレストランザクションタイプ
+  case  16716:
+    return 'ACCOUNT_KEY_LINK'
+    break;//リンクアカウントトランザクションタイプ
+  case  16708:
+    return 'ACCOUNT_METADATA'
+    break;//アカウントメタデータトランザクション
+  case  16976:
+    return 'ACCOUNT_MOSAIC_RESTRICTION'
+    break;//アカウント制限モザイクトランザクションタイプ
+  case  17232:
+    return 'ACCOUNT_OPERATION_RESTRICTION'
+    break;//アカウント制限操作トランザクションタイプ
+  case  16974:
+    return 'ADDRESS_ALIAS'
+    break;//アドレスエイリアストランザクションタイプ
+  case  16961:
+    return 'AGGREGATE_BONDED'
+    break;//集約されたボンダートランザクションタイプ
+  case  16705:
+    return 'AGGREGATE_COMPLETE'
+    break;//完全なトランザクションタイプを集約します。
+  case  16712:
+    return 'HASH_LOCK'
+    break;//ロックトランザクションタイプ
+  case  16977:
+    return 'MOSAIC_ADDRESS_RESTRICTION'
+    break;//モザイクアドレス制限タイプ
+  case  17230:
+    return 'MOSAIC_ALIAS'
+    break;//モザイクエイリアストランザクションタイプ
+  case  16717:
+    return 'MOSAIC_DEFINITION'
+    break;//モザイク定義トランザクションタイプ。
+  case  16721:
+    return 'MOSAIC_GLOBAL_RESTRICTION'
+    break;//モザイクグローバル制限タイプ
+  case  16964:
+    return 'MOSAIC_METADATA'
+    break;//モザイクメタデータトランザクション
+  case  16973:
+    return 'MOSAIC_SUPPLY_CHANGE'
+    break;//モザイク供給変更トランザクション。
+  case  16725:
+    return 'MULTISIG_ACCOUNT_MODIFICATION'
+    break;//Multisigアカウントトランザクションタイプを変更します。
+  case  17220:
+    return 'NAMESPACE_METADATA'
+    break;//名前空間メタデータトランザクション
+  case  16718:
+    return 'NAMESPACE_REGISTRATION'
+    break;//名前空間トランザクションタイプを登録します。
+  case  16972:
+    return 'NODE_KEY_LINK'
+    break;//リンクノードキートランザクション
+  case  16722:
+    return 'SECRET_LOCK'
+    break;//シークレットロックトランザクションタイプ
+  case  16978:
+    return 'SECRET_PROOF'
+    break;//秘密の証明トランザクションタイプ
+  case  16707:
+    return 'VOTING_KEY_LINK'
+    break;//リンク投票キートランザクション
+  case  16963:
+    return 'VRF_KEY_LINK'
+    break;//VRFキートランザクションをリンクします
+  default:
+    return 'OTHER'
+    break;
+
 }
+
 
 function handleSSS() {
   console.log('handle sss')
