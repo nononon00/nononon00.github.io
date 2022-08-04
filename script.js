@@ -152,7 +152,7 @@ function getTransactionType (type) { // https://symbol.github.io/symbol-sdk-type
   default:
     return 'OTHER'
     break;
-
+  }
 }
 
 
@@ -168,12 +168,12 @@ function handleSSS() {
     [
       new symbol.Mosaic(
         new symbol.MosaicId(XYM_ID),
-        symbol.UInt64.fromUint(Number(amount)*1000000)
+        symbol.UInt64.fromUint(Number(amount)*1000000)//1入力で1XYMになるように
       )
     ],
     symbol.PlainMessage.create(message),
     NET_TYPE,
-    symbol.UInt64.fromUint(50000)
+    symbol.UInt64.fromUint(50000)//SSS最大手数料設定0.05XYM
   )
 
   window.SSS.setTransaction(tx)
